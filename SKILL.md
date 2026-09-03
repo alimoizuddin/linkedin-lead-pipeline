@@ -21,7 +21,8 @@ Use this as the parent workflow for lead-list collection and LinkedIn profile-qu
 - Use public person-profile `/in/` URLs only for deliverables. Never substitute Sales Navigator, company, post, people-directory, or search URLs.
 - Do not guess a profile slug. A blank or unresolved URL is safer than a plausible wrong person.
 - LinkedIn browsing is read-only unless the user explicitly authorizes a spreadsheet edit. Never connect, message, follow, react, save leads, change account settings, or solve a CAPTCHA.
-- If LinkedIn presents a sign-in, security, rate-limit, or restriction screen, save progress and stop. Do not work around the restriction; report the exact resume point.
+- Default to small, user-approved browser batches. Inspect one profile or page at a time, checkpoint it before moving on, and pause briefly between requests. Do not continue into another batch without the user's approval.
+- If LinkedIn presents a sign-in, security, rate-limit, CAPTCHA, or restriction screen, save progress and stop immediately. Do not reload around the screen, work around it, or make further LinkedIn requests; report the exact resume point.
 - Before modifying a workbook, obtain explicit authorization. Then change only the requested cells and preserve all unrelated sheets, formulas, formatting, hyperlinks, and row order.
 
 ## Full-Pipeline Handoff
