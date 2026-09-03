@@ -1,0 +1,9 @@
+# Local lead data and resumable run state
+work/
+outputs/
+*.xlsx
+*.csv
+
+# Operating-system files
+.DS_Store
+Thumbs.db
