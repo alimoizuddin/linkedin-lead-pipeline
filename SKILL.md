@@ -1,6 +1,6 @@
 ---
 name: linkedin-lead-pipeline
-description: Run an end-to-end LinkedIn lead workflow: extract a signed-in Sales Navigator search, verify existing profile URLs, and repair only confidently proven broken links. Use for lead spreadsheet pipelines, not LinkedIn outreach.
+description: "Run an end-to-end LinkedIn lead workflow: extract a signed-in Sales Navigator search, verify existing profile URLs, and repair only confidently proven broken links. Use for lead spreadsheet pipelines, not LinkedIn outreach."
 ---
 
 # LinkedIn Lead Pipeline
