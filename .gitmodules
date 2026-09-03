@@ -1,0 +1,9 @@
+[submodule "skills/linkedin-sales-nav-leads"]
+	path = skills/linkedin-sales-nav-leads
+	url = https://github.com/alimoizuddin/linkedin-sales-nav-leads.git
+[submodule "skills/linkedin-lead-verification"]
+	path = skills/linkedin-lead-verification
+	url = https://github.com/alimoizuddin/linkedin-lead-verification.git
+[submodule "skills/finding-linkedin-id"]
+	path = skills/finding-linkedin-id
+	url = https://github.com/alimoizuddin/finding-linkedin-id.git

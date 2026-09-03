@@ -1,0 +1,3 @@
+interface:
+  display_name: "LinkedIn Lead Pipeline"
+  short_description: "Extract, verify, and repair LinkedIn lead URLs"
