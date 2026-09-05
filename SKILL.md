@@ -24,6 +24,7 @@ The existing [LinkedIn lead verification](skills/linkedin-lead-verification/SKIL
 - LinkedIn browsing is read-only unless the user explicitly authorizes a spreadsheet edit. Never connect, message, follow, react, save leads, change account settings, or solve a CAPTCHA.
 - During default URL discovery, do not open individual LinkedIn pages. Use only Google results and stop if Google presents sign-in, CAPTCHA, unusual-traffic, or verification pages.
 - Before modifying a workbook, obtain explicit authorization. Then change only the requested cells and preserve all unrelated sheets, formulas, formatting, hyperlinks, and row order.
+- For a requested original-file replacement, first validate a staged enriched copy, then archive the original with a timestamp and verify the final placed workbook against that archive.
 
 ## Full-Pipeline Handoff
 
