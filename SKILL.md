@@ -10,7 +10,7 @@ Use this as the parent workflow for lead-list collection and public-URL discover
 ## Choose The Phase
 
 1. **Extract Sales Navigator leads**: the user has an open, signed-in Sales Navigator people search and wants a sheet with `Name`, `Position`, `Company`, and `LinkedIn URL`. Read [Sales Navigator extraction](skills/linkedin-sales-nav-leads/SKILL.md). The URL is discovered through Google without opening profiles.
-2. **Find or verify public URLs through Google**: a lead sheet already has names, positions, and companies, and the user wants public LinkedIn URLs found or checked without touching LinkedIn. Read [Google-only URL discovery](skills/finding-linkedin-id/SKILL.md).
+2. **Find or verify public URLs through Google**: a lead sheet already has names, companies, and positions, and the user wants public LinkedIn URLs found or checked without touching LinkedIn. Read [Google-only URL discovery](skills/finding-linkedin-id/SKILL.md).
 3. **Full pipeline**: extract the result cards first, then run Google-only URL discovery. Do not begin URL discovery until the extraction checkpoint or workbook is saved and verified.
 
 The existing [LinkedIn lead verification](skills/linkedin-lead-verification/SKILL.md) is retained only for an explicitly requested, read-only audit of links that already exist. It is not part of the default two-stage workflow.
@@ -20,6 +20,7 @@ The existing [LinkedIn lead verification](skills/linkedin-lead-verification/SKIL
 - Preserve the lead list as the source of truth. Keep the original name, company, role, source row, and existing URL for each lead.
 - Maintain separate checkpoints for extraction and Google URL discovery. A confident Google result is not evidence that an extraction page was complete, and vice versa.
 - Use public person-profile `/in/` URLs only for deliverables. Never substitute Sales Navigator, company, post, people-directory, or search URLs.
+- The final workbook schema is exactly `Name`, `Company`, `Position`, `LinkedIn URL`, in that order, with no extra columns unless the user explicitly requests them.
 - Do not guess a profile slug. A blank or unresolved URL is safer than a plausible wrong person.
 - LinkedIn browsing is read-only unless the user explicitly authorizes a spreadsheet edit. Never connect, message, follow, react, save leads, change account settings, or solve a CAPTCHA.
 - During default URL discovery, do not open individual LinkedIn pages. Use only Google results and stop if Google presents sign-in, CAPTCHA, unusual-traffic, or verification pages.
